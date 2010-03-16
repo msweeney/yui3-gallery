@@ -102,7 +102,7 @@ YUI.add('gallery-widget-io', function(Y) {
          * The default io transaction success handler
          */
         _defSuccessHandler: function(id, o) {
-            var response = o.responseXML || o.responseText;
+            var response = o.responseText;
             var formatter = this.get('formatter');
 
             this.setContent(formatter(response));
